@@ -7,7 +7,7 @@
         :key="i"
         v-show="handleClick(i)"
       >
-        <span>{{ i.name }}</span>
+        <span>{{ i.name }}:</span>
         <span>
           <select
             v-if="i.property === 'select'"
@@ -130,6 +130,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@import '../styles/variable.scss';
 input {
   outline: none;
   padding: 5px 0;
@@ -142,13 +143,14 @@ input {
   position: relative;
   font-size: 17px;
   font-weight: bolder;
+  margin:0 72px;
   & div {
+    display:inline-block;
     padding: 5px;
     & span {
       vertical-align: top;
       display: inline-block;
       text-align: end;
-      width: 50%;
       padding-right: 21px;
     }
     & span:nth-child(2) {
@@ -174,15 +176,15 @@ input {
   font-size: 15px;
   font-weight: bold;
   width: 177px;
-  margin-top: 21px;
+  margin-top: 100px;
   border-radius: 5px;
-  background: #4b4edc;
+  background: $themeAside;
   color: #fff;
 }
 
 .checkSpan {
   vertical-align: bottom;
-  
+  display:inline-block;
   & input {
     width:25px;
     margin-right: 5px;

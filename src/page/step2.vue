@@ -1,6 +1,6 @@
 <template>
   <config-table :config="head" @click-one="handleClick" />
-  <teleport to="body">
+  <teleport to="#content">
     <bullet-frame v-if="show.editFile" @click-show="handleShow">
       <sheet v-model="state.value.files" />
     </bullet-frame>

@@ -27,9 +27,10 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@import '../styles/variable';
 .configTable {
 
-  width:500px;
+  width:900px;
   user-select: none;
   & div {
     height: 64px;
@@ -38,19 +39,15 @@ export default defineComponent({
     padding: 0 19px;
     font-size: 21px;
     color: #6c727f;
+    border-bottom:1px solid rgb(185, 184, 184);
     & span {
       float: right;
       margin: 0 8px;
        cursor:pointer;
       font-size: 16px;
-      color: #4b4edc;
+      color: $themeHeader;
     }
   }
-  & div:nth-child(odd) {
-    background-color: #f9fafb;
-  }
-  & div:nth-child(even) {
-    background-color: #fff;
-  }
+ 
 }
 </style>

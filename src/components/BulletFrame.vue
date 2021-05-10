@@ -32,12 +32,13 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@import '../styles/variable.scss';
 div{
   margin:0;
   padding:0;
 }
 .frame {
-  position:fixed;
+  position:absolute;
   top:0;
   bottom:0;
   left:0;
@@ -58,7 +59,7 @@ div{
       background-image:url('../assets/close.png');
       background-size:cover;
     }
-    background-color: #E1E7FD;
+    background-color: $themeAlert;
     & div {
       width:100%;
       height:100%;

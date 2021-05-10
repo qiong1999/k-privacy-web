@@ -31,7 +31,7 @@
         </el-menu>
       </el-row>
     </div>
-    <div class="content">
+    <div class="content" id="content">
       <slot></slot>
     </div>
   </div>
