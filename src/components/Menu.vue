@@ -61,6 +61,7 @@ export default {
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-width:1200px;
   & .header {
     position: absolute;
     top: 0;
@@ -95,12 +96,12 @@ export default {
     display: flex;
     position: absolute;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     top: 60px;
     left: 201px;
     right: 0;
     bottom: 0;
+    overflow:auto;
  }
 </style>
 

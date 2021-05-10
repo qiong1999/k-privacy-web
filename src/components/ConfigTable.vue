@@ -28,7 +28,8 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .configTable {
- 
+
+  width:500px;
   user-select: none;
   & div {
     height: 64px;

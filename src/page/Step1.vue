@@ -1,5 +1,6 @@
  
 <template>
+    
   <el-button type="primary" size="medium" @click="up">上传文件</el-button>
   <br />
   <div class="hint">跳过文件上传，直接编辑表格</div>
@@ -20,7 +21,7 @@ export default {
       uploaded: false,
       array: [[" "]],
     });
-
+   
     const store = useStore(key);
 
     async function up() {
@@ -30,7 +31,7 @@ export default {
       state.array = csv;
       state.uploaded = true;
     }
-
+   
     watch(
       () => state.array,
       (state) => {
@@ -55,6 +56,7 @@ export default {
       goEdit,
       log,
       up,
+     
     };
   },
 };
@@ -62,13 +64,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variable.scss";
- 
- .hint { 
-      border-bottom:1px solid rgb(197, 196, 196);
-      color:rgb(197, 196, 196);
-      width:210px;
-      // background:red;
-    }
+
+.hint {
+  border-bottom: 1px solid rgb(197, 196, 196);
+  color: rgb(197, 196, 196);
+  width: 210px;
+  // background:red;
+}
 </style>
 
 

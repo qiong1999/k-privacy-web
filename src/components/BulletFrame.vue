@@ -44,6 +44,7 @@ div{
   right:0;
   padding:100px;
   background-color:rgba(163, 162, 162, 0.1);
+  z-index:10000;
   & .bullet{
     width:100%;
     height:100%;
@@ -54,7 +55,7 @@ div{
       height:20px;
       font-size:11px;
       cursor: pointer;
-      background-image:url('@/assets/close.png');
+      background-image:url('../assets/close.png');
       background-size:cover;
     }
     background-color: #E1E7FD;
